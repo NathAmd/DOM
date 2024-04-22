@@ -21,19 +21,15 @@ for (learn of learner) {
 
 
 function NewLearner(name) {
-
-    let newSection = document.createElement("section");
-
     let newText = document.createTextNode(name)
 
     newSection.appendChild(newText);
-
 
     let r = Math.random() * 255;
     let g = Math.random() * 255;
     let b = Math.random() * 255;
     newSection.style = "background: rgb(" + r + "," + g + "," + b + ") ; color: " + (r > 127.5 || g > 127.5 || b > 127.5 ? "black" : "white");
-    newSection.setAttribute("class","learner")
+    newSection.setAttribute("class", "learner");
 
     article.appendChild(newSection);
 }
